@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root{
+    --components-width: 80%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: left;
+}
+body{
+    background-color:rgb(242, 242, 242);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+@media (max-height:29rem) {
+    body{
+        min-height:29rem;
+    }
+}
+
+main{
+    width: 60%;
+    height:70%;
+    min-height: 27.5rem;
+    max-height: 37rem;
+    min-width: 38rem;
+    max-width: 55rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    border-radius: 10px;
+}
+@media (max-width:40rem){
+    main{
+        width: 90%;
+        min-width: 0rem;
+        max-width: 25rem;
+        height:100%;
+        max-height: 100%;
+        margin: 2.5rem 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 27rem 27rem 27rem;
+    }
+}
+.boxes{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.sedan-box{
+    background-color: hsl(31, 77%, 52%);
+}
+.SUVs-box{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-box{
+    background-color:hsl(179, 100%, 13%);
+}
+.image{
+    width:var(--components-width); 
+}
+
+h1{
+   color: rgb(242, 242, 242);
+   width:var(--components-width); 
+}
+p{
+    color: rgba(255, 255, 255, 0.75);
+    width:var(--components-width);
+}
+.button{
+    width:var(--components-width);
+}
+button{
+    width:60%;
+    text-align: center;
+    padding:1rem 0;
+    border-top-left-radius:20% 50%;
+    border-top-right-radius:20% 50%;
+    border-bottom-right-radius:20% 50%;
+    border-bottom-left-radius:20% 50%;
+    background-color: rgb(242, 242, 242);
+    border: 2px solid rgb(242, 242, 242);
+}
+.sedan-box button{
+    color:hsl(31, 77%, 52%);
+}
+.SUVs-box button{
+    color:hsl(184, 100%, 22%);
+}
+.luxury-box button{
+    color:hsl(179, 100%, 13%);
+}
+button:hover,
+button:active{ 
+    color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+.sedan-box button:hover,
+.sedan-box button:active{ 
+    background-color: hsl(31, 77%, 52%);
+}
+.SUVs-box button:hover,
+.SUVs-box button:active{ 
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-box button:hover,
+.luxury-box button:active{ 
+    background-color: hsl(179, 100%, 13%);
+}
